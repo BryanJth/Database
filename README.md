@@ -23,11 +23,6 @@ The UI is implemented using **ipywidgets + HTML/CSS**, supporting **Customer** a
 ---
 
 ## Demo Screenshots
-If you keep the file name with spaces, use `%20` in Markdown:
-
-```text
-BRWSC%20Hardware%20Store%20GUI.jpg
-```
 
 ![BRWSC Hardware Store GUI](BRWSC%20Hardware%20Store%20GUI.jpg)
 
@@ -42,7 +37,7 @@ BRWSC%20Hardware%20Store%20GUI.jpg
 ## Database Overview (SQLite)
 
 Database file in this repo:
-- `penjualan_new(2) (1).db` *(recommended rename to `penjualan_new.db`)*
+- `penjualan_new(2) (1).db`
 
 Dummy data (from the report):
 - `customers`: 80 rows
@@ -119,11 +114,6 @@ Current files (as uploaded):
 - `Makalah.pdf` — report (DB design + ERD)
 - `Presentation.pdf` — slides
 
-Recommended (optional) clean naming:
-- `GUI CODE (1).ipynb` → `gui_code.ipynb`
-- `penjualan_new(2) (1).db` → `penjualan_new.db`
-- `BRWSC Hardware Store GUI.jpg` → `brwsc_hardware_store_gui.jpg`
-
 ---
 
 ## How to Run
@@ -198,16 +188,3 @@ conn = sqlite3.connect('./penjualan_new.db')
 - Some naming in DB is preserved as-is (e.g., `amout_paid` typo).
 - Status values in code are simplified (`pending`/`proceed`) and can be extended.
 
----
-
-## Markdown Tips (so it doesn’t “kepotong”)
-To **close** a code block in README, add **three backticks** on a new line:
-
-```text
-```csv
-text,label
-"example",positive
-```
-```
-
-The last ``` is what closes the block.
